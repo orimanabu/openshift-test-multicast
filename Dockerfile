@@ -5,7 +5,7 @@
 #
 FROM centos:centos7
 
-RUN INSTALL_PKGS="omping" && \
+RUN INSTALL_PKGS="omping tcpdump" && \
     yum install -y $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
     yum clean all
