@@ -10,4 +10,6 @@ RUN INSTALL_PKGS="omping tcpdump" && \
     rpm -V $INSTALL_PKGS && \
     yum clean all
 
+EXPOSE 4321:4321/udp
+
 ENTRYPOINT sleep 10000000
